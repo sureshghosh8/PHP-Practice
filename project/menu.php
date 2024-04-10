@@ -29,6 +29,9 @@
           <a class="nav-link" href="about.php">About</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="#">Login/Register</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#">Contact</a>
         </li>
         
