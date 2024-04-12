@@ -16,7 +16,24 @@ header("location:index.php");
 else
 echo mysqli_error($con);
 }
-else{
-    echo"No connection";
-}
+
 ?>
+<?php
+$con=mysqli_connect('localhost','root',"","developer");
+if($con)
+{
+    echo"connection successful";
+    echo"No connection";
+    $username=$_POST['username'];
+    $email=$_POST['email'];
+    $password=$_POST['password'];
+    $query="insert into users (username,email,password) values('$user','$email','$password')";
+    echo "$query";
+    mysqli_query($con,$query);
+    $r=mysqli_affected_rows($con);
+    if($r>0)
+    header("location:wel.php");
+else
+echo mysqli_error($con)
+}
+
