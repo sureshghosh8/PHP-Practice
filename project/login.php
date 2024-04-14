@@ -46,7 +46,7 @@
                     </div>
                     <div class="form-box register">
                         <h1>Registration</h1>
-                        <form action="register" method="post">
+                        <form action="register.php" method="post">
                         <div class="input-box">
                     <span class="icon"><ion-icon name="person"></ion-icon></ion-icon></span>
                     <input type="text"  required="required" name="na">
@@ -86,3 +86,4 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 </body>
 </html>
+
